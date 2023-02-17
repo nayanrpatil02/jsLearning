@@ -1,0 +1,27 @@
+console.log("SWAPPING VALUES");
+console.log("                                                    ");
+console.log("******************** Step 1 ********************");
+var sweety = "Sweety" ;
+var cutie = "Cutie" ;
+console.log("VALUES BEFORE SWAPPING");
+console.log(sweety,cutie);
+var temp = sweety;
+sweety=cutie;
+cutie=temp;
+console.log("VALUES AFTER SWAPPING");
+console.log(sweety,cutie);
+
+console.log("******************** Step 2 ********************");
+var num1 = 100 ;
+var num2 = 200 ;
+var num3 = 300 ;
+console.log("VALUES BEFORE SWAPPING");
+console.log(num1,num2,num3);
+var temp1 = num1;
+var temp2 = num2;
+num1 = num2;
+num2=num3;
+num3=temp1;
+console.log("VALUES AFTER SWAPPING");
+console.log(num1,num2,num3);
+console.log("******************** END ********************");
