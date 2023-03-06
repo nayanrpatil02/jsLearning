@@ -55,6 +55,7 @@ console.log("split() method");
 var greet = "Good Morning my dear friend";
 var splitResult = greet.split(" ");
 console.log(splitResult);
+
 console.log("Total words",splitResult.length);
 
 var myFriendList = "Bill gates, Stew Job, Elon Musk,Ratan Tata, Sundar Pichai, Satya Nadella, Narayan Murti, Nandan Nilekani, Larry Page, Surgey Brain, Tin Cook";

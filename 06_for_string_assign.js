@@ -26,8 +26,8 @@ console.log("********** TOTAL NUMBER OF CHARACTERS **********");
 var wordCount = function lastWordCharsCount(givenStr) {
     var len = 0;
     stringAfterTrim = givenStr.trim();
-    for (let i = 0; i < stringAfterTrim.length; i++) {
-        if (stringAfterTrim[i] == " ") {
+    for (let index = 0; index < stringAfterTrim.length; index++) {
+        if (stringAfterTrim[index] == " ") {
             len = 0;
         }
         else {

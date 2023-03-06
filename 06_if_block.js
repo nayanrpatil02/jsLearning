@@ -17,7 +17,7 @@ if(num>0){  //condition false
 }
 
 console.log(`End`);
-console.log("==================================================================");
+console.log("==================================================");
 
 var ageForVote = 20;
 if (ageForVote >= 18) {
@@ -25,7 +25,7 @@ if (ageForVote >= 18) {
     console.log(`Age is : ${ageForVote}`);
 }
 console.log(`End of block`);
-console.log("==================================================================");
+console.log("==================================================");
 
 function checkEvenOdd(num){
    if(num%2 == 0){
@@ -41,6 +41,7 @@ console.log(` Given number 45 is : ${result}`);
 
 var result = checkEvenOdd(70);
 console.log(` Given number 70 is : ${result}`);
+console.log("==================================================");
 
 var num1 = -5 //5 
 if (num1 > 0) {
@@ -49,7 +50,7 @@ if (num1 > 0) {
     console.log(`Number ${num1} is negative`);
     
 }
-
+console.log("==================================================");
 function maleMarriageEligibility(gender, age, boyName) {
     if(gender=="Male" && age >=21){
         console.log("You are eligible");
@@ -59,3 +60,6 @@ function maleMarriageEligibility(gender, age, boyName) {
 }
 maleMarriageEligibility("Male", 25, "Billgates");
 maleMarriageEligibility("Male", 20, "Anil");
+
+console.log("==================================================");
+

@@ -3,8 +3,7 @@ function voteEligibility(age) {
   if (age <= 0 || age > 120 || age == undefined || age == "NULL") {
     console.log(`INVALID DATA : The given age ${age} is invalid. Please enter Valid Data`);
   }
-  else
-  if (age >= 18) {
+  else if (age >= 18) {
     console.log(`The candidate with age ${age} is eligible for voting.`);
   } 
   else { //if(age < 18)
@@ -23,22 +22,22 @@ voteEligibility(null);
 
 console.log("********** STEP 2 **********");
 function gradeCalculation(marks) {
-  if (marks<= 0 || marks > 100 || (typeof marks!= "number")) {
+  if (marks<= 0 || marks > 100 || (typeof marks!= "number")|| isNaN(marks) ) {
     console.log(`Please provide the valid marks - ${marks}`);
-  }
+  } 
   if (marks>= 90 && marks< 100){
   console.log(`Funtastic marks: ${marks}, Your grade is A+.`);
- }
- if (marks >= 75 && marks < 90){
+ } 
+ if (marks>=75 && marks<90){
   console.log(`Excellent marks: ${marks}, Your grade is A.`);
  }
- if (marks >= 50 && marks < 75){
+ if (marks>= 50 && marks<75){
   console.log(`Good marks: ${marks}, Your grade is B.`);
  }
- if (marks >= 35 && marks < 50){
+ if (marks>=35 && marks<50){
   console.log(`Marks is: ${marks}, Your grade is C, Need improvement.`);
  }
- if (marks < 35 && marks > 1){
+ if (marks<35 && marks>1){
   console.log(`Marks is: ${marks}, Enter valid marks.`);
  }
 }

@@ -7,7 +7,7 @@ function stringHandsOn(){
     console.log("Length of string is :",stringLength);
     console.log("********** STEP 3 **********");
     var stringAfterTrim = string.trim()
-    console.log("String after removing extra spaces:", stringAfterTrim,"\n And its length is:", stringAfterTrim.length);
+    console.log("String after removing extra spaces:", stringAfterTrim," \t And its length is:", stringAfterTrim.length);
     console.log("********** STEP 4 **********");
     var spacesRemoved = string.length-stringAfterTrim.length;
     console.log("The count of spaces removed in step 3 is:", spacesRemoved);
