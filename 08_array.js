@@ -99,3 +99,13 @@ arrayOfNumbers.splice(2, 1 ,50,60); //at index 2, remove 1 elemnts and replace t
 //arrayOfNumbers.splice(2, 3 ,50,60); //at index 2, remove 3 elemnts and replace them by 50 & 60
 console.log(arrayOfNumbers);
 
+console.log("======================================================================================================================");
+console.log("===== Traversing ===================="); 
+var arrayOfNumbers = [ 10, 20, 25, 15, 40, 45, 60, 40, 30, 22, 26 ]; 
+let sum = 0;
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index]; 
+    sum = sum + element; 
+    //console.log(element);
+ } 
+   console.log(`Sum of an Array element is: ${sum}`);
