@@ -1,0 +1,3 @@
+// Spread Operator ...
+
+const array = []
