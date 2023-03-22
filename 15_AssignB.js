@@ -1,7 +1,6 @@
 console.log(" ******************** ASSIGNMENT B ******************** ");
-console.log(" ");
+//console.log(" ");
 console.log(" ==================== STEP 1 : CREATE EMPLOYEE OBJECT USING CLASS  ==================== ");
-
 class Employee {
     constructor(emp_id, emp_name, emp_dept, emp_salary, emp_company){
         this.emp_id = emp_id;
@@ -11,7 +10,6 @@ class Employee {
         this.emp_company = emp_company;
     }
 }
-
 const emp_anil = new Employee(22, "Anil", "IT", 50000, "TCS");
 const emp_radha = new Employee(33, "Radha", "HR", 74000, "WIPRO");
 const emp_rishi = new Employee(55, "Rishi", "Finance", 47000, "TCS");
@@ -46,7 +44,7 @@ for (const iterator of array_employees) {
     }
     console.log("===================================================================================");*/
 
-console.log(" ");
+//console.log(" ");
 console.log(" ==================== STEP 3 : Name and company name of employess working in TCS ==================== ");
 
 for (const iterator of array_employees) {
@@ -55,7 +53,7 @@ if (iterator.emp_company=="TCS"){
 }
 }
 
-console.log(" ");
+//console.log(" ");
 console.log(" ==================== STEP 4 : Name and Dept. name of employees working in Finance dept ==================== ");
 
 for (const iterator of array_employees) {
@@ -65,19 +63,20 @@ for (const iterator of array_employees) {
     }    
 }
 
-console.log(" ");
+//console.log(" ");
 
 console.log(" ==================== STEP 5 : Details of employee whose name starts with R ==================== ");
 
 for (const iterator of array_employees) {
     if(iterator.emp_name.startsWith("R"))
     {
-        console.log(`Employee Name : ${iterator.emp_name} Emp id : ${iterator.emp_id} Department : ${iterator.emp_dept} salary : ${iterator.emp_salary} company Name : ${iterator.emp_company}`);
+        //console.log(iterator);
+       console.log(`Employee Name : ${iterator.emp_name} Emp id : ${iterator.emp_id} Department : ${iterator.emp_dept} salary : ${iterator.emp_salary} company Name : ${iterator.emp_company}`);
     }
     
 }
 
-console.log(" ");
+//console.log(" ");
 
 console.log(" ==================== STEP 6 : Name and Company name of employees whose salary is greater than 75000 ==================== ");
 
@@ -101,7 +100,7 @@ for (const iterator of array_employees) {
     
 }
 
-console.log(" ");
+//console.log(" ");
 
 console.log(" ==================== STEP 7 : Details of employees whose whose company=Infy ==================== ");
 

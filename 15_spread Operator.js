@@ -1,3 +1,0 @@
-// Spread Operator ...
-
-const array = []

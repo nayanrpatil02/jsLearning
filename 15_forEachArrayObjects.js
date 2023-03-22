@@ -35,4 +35,3 @@ arrayEmployee.forEach(employee => {
 });
 console.log(totalSalaryOfInfy);
 
-//1.16
