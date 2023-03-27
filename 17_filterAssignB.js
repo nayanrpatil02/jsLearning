@@ -29,6 +29,24 @@ console.log(tcsEmployee);
 console.log(" ");
 console.log("==================== STEP 2 - AVERAGE SALARY OF EMPLOYEE WORKING IN WIPRO ====================");
 
+const arrayOfWipro= arrayEmployee.filter((employee) => {
+    return employee.emp_company == "Wipro"
+});
+ 
+arrayOfWipro.forEach((employee) => {
+    console.log(employee);
+});
+
+const totalSalary = arrayOfWipro.reduce((runningTotal, element) => {
+    return runningTotal + element.emp_salary ;
+}, 0 );
+
+const aveg = totalSalary/arrayOfWipro.length ;
+
+console.log(`AVERAGE SALARY OF EMPLOYEE WORKING IN WIPRO IS : ${aveg}`);
+
+
+/*
 var avg=0;
 let total=0;
  arrayEmployee.filter((Employee)=>{
@@ -41,16 +59,33 @@ let total=0;
 console.log(avg);
 
 total=0;
-avg=0;
+avg=0;*/
 //console.log(" ");
 console.log("==================== STEP 3 - AVERAGE SALARY OF EMPLOYEE WORKING IN WIPRO AND INFY ====================");
-arrayEmployee.filter((Employee)=>{
+
+const arrayOfWiproAndInfy = arrayEmployee.filter((employee) => {
+    return (employee.emp_company == "Wipro" || employee.emp_company == "Infy");
+});
+
+arrayOfWiproAndInfy.forEach((employee) => {
+    console.log(employee);
+});
+
+const totalSalary1 = arrayOfWiproAndInfy.reduce((runningTotal, element) => {
+    return runningTotal + element.emp_salary ;
+}, 0 );
+
+const averg = totalSalary1/arrayOfWiproAndInfy.length ;
+
+console.log(`AVERAGE SALARY OF EMPLOYEE WORKING IN WIPRO IS : ${averg}`);
+
+/*arrayEmployee.filter((Employee)=>{
     if(Employee.emp_company=="Wipro" || Employee.emp_company=="Infy")
     {   
         total=(total+Employee.emp_salary);
         avg=total/4;       
     }
-});console.log(`Average salary of employees woking in Wipro and Infosys:=${avg}`)
+});console.log(`Average salary of employees woking in Wipro and Infosys:=${avg}`) */
 
 
 
